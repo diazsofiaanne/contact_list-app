@@ -1,0 +1,13 @@
+.container {
+    margin: 0px 50px;
+    padding: 0px 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.table{
+    border-color: black;
+    
+}
+.table .btn{
+    margin-right: 10px;
+    justify-content:center;
+}

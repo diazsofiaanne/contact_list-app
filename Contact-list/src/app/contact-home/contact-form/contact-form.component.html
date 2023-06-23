@@ -1,0 +1,36 @@
+<div class="container-form">
+    <div class="form">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+            <label class="labels">Name</label><br>
+            <input type="text" 
+            id="name" 
+            class="form-control" 
+            placeholder="ex. John Bravo"
+            formControlName = "name">
+            <small *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.touched"class="text-danger">Name is required.</small>
+            </div>
+            <div class="form-group">
+            <label class="labels">Email Address</label><br>
+            <input type="text" 
+            id="email" 
+            class="form-control" 
+            placeholder="ex. johnbravo@email.com"
+            formControlName = "email">
+            <small *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched"class="text-danger">Email address is required.</small>
+            </div>
+            <div class="form-group">
+            <label class="labels">Contact no.</label><br>
+            <input type="text" 
+            id="phone" 
+            class="form-control" 
+            placeholder="ex. 09816263842"
+            formControlName = "phone">
+            <small *ngIf="userForm.get('phone')?.invalid && userForm.get('phone')?.touched"class="text-danger">Contact number is required.</small>
+            </div>
+
+        <button class="btn btn-primary" type="submit" [disabled]="userForm.invalid">{{ userData ? "UPDATE" : "ADD" }}</button>&nbsp;
+        </form>
+        
+    </div>
+</div>

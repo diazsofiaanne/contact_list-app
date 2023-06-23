@@ -1,0 +1,8 @@
+<app-form (newUserEvent)="postUser($event.user, $event.updateMode)" [userData]="foundUser"> </app-form>
+
+<app-list 
+[userData]="users"
+(userViewId)="getViewUserId($event)"
+(userUpdateId)="getUpdateUserId($event)"
+(userDeleteId)="getDeleteUserId($event)"> 
+</app-list>

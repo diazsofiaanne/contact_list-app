@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="form-info" *ngIf="foundData">
+        <strong>ID: </strong>
+        <p>{{ foundData.id }} </p>
+        <strong>Name: </strong>
+        <p>{{ foundData.name }}</p>
+        <strong>Email: </strong>
+        <p>{{ foundData.email }}</p>
+        <strong>Contact no.: </strong>
+        <p>{{ foundData.phone }}</p>
+        <a href="#" routerLink="/home" class="fa fa-chevron-left"> Back</a>
+    </div>
+</div>

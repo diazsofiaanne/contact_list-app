@@ -1,0 +1,20 @@
+.container{
+    margin: 50px 50px;
+    padding: 50px 40px;
+    border: gray solid 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.container a {
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    text-align: left;
+    background-color: rgb(102, 155, 254);
+    border-radius: 5px;
+    text-decoration: none;
+}

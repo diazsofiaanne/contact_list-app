@@ -1,0 +1,29 @@
+.container-form{
+    margin: 20px 50px;
+    padding: 0px 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.form{
+    margin: 5px 0px;
+}
+.form-group{
+    margin: 0px;
+}
+.form label {
+    padding-top: 5px;
+    color: solid rgb(60, 38, 38);
+    font-size: 15px;
+    font-weight: bolder;
+}
+.form input{
+    width: 50%;
+    border: solid 1px black;
+}
+.form button{
+    margin: 10px 0px;
+    padding: 10px 32px;
+}
+
+input.ng-invalid.ng-touched {
+    border: red 2px solid;
+}

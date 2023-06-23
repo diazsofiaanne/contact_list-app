@@ -1,0 +1,25 @@
+<div class="container">
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 5%">ID</th>
+      <th scope="col" style="width: 30%">Name</th>
+      <th scope="col" style="width: 20%">Email Address</th>
+      <th scope="col" style="width: 20%">Contact no.</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider" *ngFor="let user of userData">
+    <tr>
+      <th scope="row">{{ user.id }}</th>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+      <td>
+      <button class="btn btn-info" (click)="viewUserDetail(user.id)">View</button>
+      <button class="btn btn-primary" (click)="updateUserDetail(user.id)">Edit</button>
+      <button class="btn btn-danger" (click)="deleteUserDetail(user.id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
